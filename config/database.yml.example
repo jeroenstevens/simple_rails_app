@@ -1,0 +1,18 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: simple_rails_app
+  template: template2
+  host: 10.0.0.101
+  pool: 5
+  username: postgres
+  password: foobar
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: simple_rails_app_development
+  host: localhost
+  pool: 5
+  username: <%= ENV['USER'] %>
+  password:
