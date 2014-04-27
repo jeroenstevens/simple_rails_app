@@ -1,18 +1,10 @@
-production:
+defaults: &defaults
   adapter: postgresql
   encoding: unicode
-  database: simple_rails_app
-  template: template2
-  host: <%= ENV['host'] %>
   pool: 5
-  username: postgres
-  password: foobar
+  username: shinav
 
 development:
-  adapter: postgresql
-  encoding: unicode
+  <<: *defaults
   database: simple_rails_app_development
-  host: localhost
-  pool: 5
-  username: <%= ENV['user'] %>
-  password:
+  password: shinav
