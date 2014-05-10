@@ -1,0 +1,16 @@
+/<h1>Editing post</h1>
+
+/<%= render 'form' %>
+
+/<%= link_to 'Show', @post %> |
+/<%= link_to 'Back', posts_path %>
+
+h1 Editing post
+= render 'form'
+= link_to 'Show', @post
+= link_to 'Back', posts_path
+
+/Some list if you would want to design the links
+/ul.actions
+  /li= link_to 'Show', @post
+  /li= link_to 'Back', posts_path
