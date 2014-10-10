@@ -2,9 +2,9 @@ defaults: &defaults
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: shinav
+  username: postgres
 
 development:
   <<: *defaults
   database: simple_rails_app_development
-  password: shinav
+  password: postgres
